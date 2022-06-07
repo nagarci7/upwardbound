@@ -5,34 +5,45 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    h1 {
-      color: red;
-      font-size: 105px;
-    }
-
-    img {
-      display: inline-block;
-      width: 30%;
-    }
-
-    p {
-      display: inline-block;
-      padding: 10px 0 20px 20px;
-    }
-
-    .block {
+    .container {
+      max-width: 1200px;
       display: block;
-      font-size: 45px;
-      padding: 45px;
+      margin: auto;
     }
-
-    .row2 img {
-      float: right;
+    .feature {
+      position: relative;
     }
-
-    .row2 p {
-      color: green;
-      font-family: Arial, Helvetica, sans-serif;
+    .feature .text-wrap {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      width: 40%;
+      transform: translateY(-50%);
+      color: #fff;
+    }
+    .columns .col {
+      display: inline-block;
+      width: 33%;
+      position: relative;
+    }
+    .columns .col p {
+      position: absolute;
+      padding: 0 15px;
+      bottom: 5%;
+      left: 5%;
+      color: white;
+      font-weight: bold;
+    }
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+    }
+    @media screen and (max-width: 767px) {
+      .columns .col {
+        display: block;
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -43,20 +54,22 @@
     <div class="container">
       <h1>Hello</h1>
       <section class="feature">
-        <img src="knight.jpg">
-        <p>This is a sentence about Moon Knight. Moon Knight is a comic book and also a show on Disney Plus</p>
+        <a href="https://www.google.com/"><img src="knight.jpg"></a>
+        <div class="text-wrap">
+          <p>This is a sentence about Moon Knight. Moon Knight is a comic book and also a show on Disney Plus</p>
+        </div>
       </section>
       <section class="columns">
         <div class="col">
-          <img src="knight.jpg">
+          <a href="https://www.amazon.com/"><img src="daredevil.jpg"></a>
           <p>This is a sentence about Moon Knight. Moon Knight is a comic book and also a show on Disney Plus</p>
         </div>
         <div class="col">
-          <img src="knight.jpg">
+          <a href="https://www.uiw.edu/"><img src="fantomex.jpg"></a>
           <p>This is a sentence about Moon Knight. Moon Knight is a comic book and also a show on Disney Plus</p>
         </div>
         <div class="col">
-          <img src="knight.jpg">
+          <a href="https://critrole.com/"><img src="fjord.jpg"></a>
           <p>This is a sentence about Moon Knight. Moon Knight is a comic book and also a show on Disney Plus</p>
         </div>
       </section>
