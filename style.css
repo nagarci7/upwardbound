@@ -1,0 +1,40 @@
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: auto;
+}
+.feature {
+  position: relative;
+}
+.feature .text-wrap {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  width: 40%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+.columns .col {
+  display: inline-block;
+  width: 33%;
+  position: relative;
+}
+.columns .col p {
+  position: absolute;
+  padding: 0 15px;
+  bottom: 5%;
+  left: 5%;
+  color: white;
+  font-weight: bold;
+}
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .columns .col {
+    display: block;
+    width: 100%;
+  }
+}
