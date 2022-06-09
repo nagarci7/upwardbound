@@ -43,3 +43,12 @@ h2 {
   color: #fff;
   text-align: center;
 }
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 0%;
+}
